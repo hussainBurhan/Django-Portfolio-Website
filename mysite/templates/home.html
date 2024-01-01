@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/styles/home1.css">
+    <script src="/static/js/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+  <div class="hero">
+    <div class="hero_overlay">
+        <div class="navcontainer">
+            <div class="navbar">
+                <a class="logo" href="{% url 'home' %}">Hussain B.</a>
+                <a class="navlink" href="{% url 'blog' %}">Blog</a>
+                <a class="navlink" href="{% url 'projects' %}">Projects</a>
+                <a class="navlink" href="{% url 'resume' %}">Resume</a>
+                <a class="navlink" href="{% url 'home' %}">Home</a>
+            </div>
+        </div>
+        <div>
+        <h1 class="page">"There are endless number of things to discover about Robotics and AI. A lot of it is too fantastic for people to believe."</h1>
+        </div>
+    </div>
+    </div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/resume.png" alt="Avatar" style="width:100%">
+          <div class="contain">
+          <a href="{% url 'resume' %}"><b>Resume</b></a>
+          
+        </div>
+      </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/probg.png" alt="Avatar" style="width:100%">
+          <div class="contain">
+          <a href="{% url 'projects' %}"><b>Projects</b></a>
+        </div>
+      </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/blog.png" alt="Avatar" style="width:100%">
+          <div class="contain">
+          <a href="{% url 'blog' %}"><b>Blog</b></a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <h1>Get in touch</h1>
+  <p>Interested in my work? I'd love to hear from you! Drop me a line, and let's bring creative ideas to life.</p>
+  <a href="https://www.linkedin.com/in/hburhanuddin/" class="fa fa-linkedin"></a>
+  <a href="https://github.com/hussainBurhan" class="fa fa-github"></a>
+  <a href="mailto: hussainburhan.inbox@gmail.com" class="fa fa-envelope"></a>
+</div>
+</body>
+</html>

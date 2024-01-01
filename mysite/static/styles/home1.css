@@ -1,0 +1,308 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/static/fonts/Montserrat-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: Lato;
+    src: url(/static/fonts/Lato-Regular.ttf);
+  }
+  @font-face {
+    font-family: tektur;
+    src: url(/static/fonts/Tektur-Regular.ttf);
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(/static/fonts/Roboto-Light.ttf);
+  }
+  @font-face {
+    font-family: alba;
+    src: url(/static/fonts/Agbalumo-Regular.ttf);
+  }
+  @font-face {
+    font-family: Oswald;
+    src: url(/static/fonts/Oswald-Regular.ttf);
+  }
+  *{
+      margin-top: 0;
+      margin-bottom: 0;
+      box-sizing: border-box;
+  }
+  body{
+      margin: 0;
+  }
+  .hero{
+    background-image: url('/static/images/ai.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero_overlay{
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .navcontainer{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+
+  .logo{
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: white;
+    font-family: Oswald;
+    text-shadow: 0 0 5px #FFFFFF;
+  }
+  .navlink{
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-family: Roboto;
+  }
+  .page{
+    text-align: center;
+    padding-top: 140px;
+    color: white;
+    font-family: Roboto;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1000px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .container {
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    background-color: white;
+    padding-bottom: 50px;
+    
+    
+  }
+  
+
+  .column {
+    float: left;
+    width: 33.3%;
+    padding: 5px 5px 5px 5px;
+    
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 1px 1px 3px 1px;
+    transition: all .5s ease-in-out ;
+    
+  }
+  .contain a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Lato;
+    color: #333;
+
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 5px 1.5px;
+  }
+  
+  /* Add some padding inside the card container */
+  .contain {
+    padding: 2px 16px;
+    text-align: center;
+    
+  }
+
+  .footer{
+    background-color: #333;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer h1{
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-family: Lato;
+    font-size: 40px;
+  }
+  .footer p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: Lato;
+    letter-spacing: 0.7px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .fa {
+    padding: 12.5px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-github {
+    background: #6000a4;
+    color: white;
+  }
+  .fa-envelope {
+    background: red;
+    color: white;
+  }
+
+  @media (max-width: 320px){
+    .logo {
+        font-size: 20px;
+    }
+    .navlink {
+        font-size: 14px;
+    }
+    .page {
+        font-size: 20px;
+        
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .fa {
+        padding: 7px;
+        font-size: 16px;
+        width: 30px;
+    }
+    .column {
+      width: 100%;
+      padding: 10px 30px 10px 30px;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .logo {
+        font-size: 20px;
+    }
+    .navlink {
+        font-size: 14px;
+    }
+    .page {
+        font-size: 20px;
+        
+    }
+    .footer h1 {
+        font-size: 20px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .fa {
+        padding: 7px;
+        font-size: 16px;
+        width: 30px;
+    }
+    .column {
+      width: 100%;
+      padding: 10px 30px 10px 30px;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px){
+    .logo {
+        font-size: 20px;
+    }
+    .navlink {
+        font-size: 16px;
+    }
+    .page {
+        font-size: 25px;
+    }
+    .footer h1 {
+        font-size: 25px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 16px;
+        width: 36px;
+    }
+    .column {
+      width: 100%;
+      padding: 10px 30px 10px 30px;
+    }
+}
+@media (min-width: 600px) and (max-width: 800px){
+    .logo {
+        font-size: 25px;
+    }
+    .navlink {
+        font-size: 18px;
+    }
+    .page {
+        font-size: 25px;
+        
+    }
+    .footer h1 {
+        font-size: 30px;
+    }
+    .footer p {
+        font-size: 18px;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 16px;
+        width: 36px;
+    }
+    .column {
+      width: 100%;
+      padding: 10px 120px 10px 120px;
+    }
+    
+}  
+
+  
+
