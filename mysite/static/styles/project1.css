@@ -87,7 +87,7 @@
     
   }
   .main {
-    background-color: rgba(112, 234, 131, 0.874);
+    background: linear-gradient(to bottom, #d4e0db, #afcccd);
   }
   .container {
     margin-left: auto;
@@ -100,6 +100,10 @@
   .ML {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: Lato;
     color: #333;
     padding: 10px 10px 10px 10px;
